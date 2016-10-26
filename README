@@ -1,0 +1,30 @@
+Bottr Tasks
+------------
+
+The goal of this task is to implement the following flow in a web app.
+
+*PART 1 (don't use jQuery):* 
+*FrontEnd*
+- Create a webpage to select an image file to upload 
+- Show the selected image on the page. 
+- Allow the user to crop and rotate the selected image 
+- Upload the image to following node server
+*PART 2: * 
+*Node js : create an endpoint to upload the image*
+- All types of error handling 
+- On Success : return a url of the uploaded image ( 
+http://localhost:8080/images/snippet.png 
+<http://localhost:8080/images/snippet.png>). 
+- map the uploaded image with a random string (use mongo db), let's say 
+"aqswde" that user can access via (http://localhost:8080/views/ 
+uploaded/aqswde )
+
+# Prerequisites
+- node
+
+# Setup
+- run `npm install`
+- start mongo
+- run `npm start`
+
+server would launch at port 5698

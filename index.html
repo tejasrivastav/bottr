@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./public/mosaic.js"></script>
+    <script type="text/javascript" src="./public/client.js"></script>
+    <title>Mosaic</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <input type="file" onchange="upload(this)"/>
+        <button onclick="clockWise()">clockWise</button>
+        <button onclick="counterClockWise()">counterClockWise</button>
+        <button onclick="save()">Save</button>
+      </div>
+      <div>Select portion of the image to crop</div>
+      <a id="response" style="display:none"></a>
+      <div class="content">
+        <div id="canvasContainer">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
